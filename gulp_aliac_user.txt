@@ -1,0 +1,21 @@
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type = cat-file -t
+	dump = cat-file -p
+[user]
+	name = aj4ka
+	email = aimfury@gmail.com
+	
+
+////////// Памятка /////////////////
+
+Добавить в конфиг файл галпа всё что выше или через терминал, команты винзу. На новом компе зарегать так же права для глобала. (вместо --local, --g или --global).
+
+1) git init
+2) git config --local user.name "aj4ka"
+3) git config --local user.email aimfury@gmail.com
+4) Клонировать свой реп стартер. git clone https://github.com/aj4kaa/starter
