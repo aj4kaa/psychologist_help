@@ -33,10 +33,6 @@ h1, h2, h3 {
 	padding: 0;
 }
 
-button:hover {
-	background-color: #ecb430;
-}
-
 span:hover {
 	font-size: 2em;
 	color: $gold;
@@ -47,5 +43,8 @@ span:hover {
 @import "blocks/header";
 @import "blocks/promo";
 @import "blocks/about";
+@import "blocks/services";
+@import "blocks/questions";
+@import "blocks/entry";
 @import "blocks/footer";
 @import "base/media";

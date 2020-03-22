@@ -4,6 +4,7 @@
 	height: 57px;
 	width: 100%;
 	background-color: $bg;
+	z-index: 999;
 	&__wrap {
 		display: flex;
 		justify-content: space-between;

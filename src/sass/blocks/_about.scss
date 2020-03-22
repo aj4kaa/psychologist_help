@@ -1,5 +1,23 @@
 .about {
-	height: 800px;
 	background-color: $bg;
-	padding: 40px 0 53px 0;
+	padding-top: 40px;
+	&__wrap {
+		position: relative;
+		margin-top: 50px;
+		display: flex;
+	}
+	&__wrap:after {
+		content: '';
+		position: absolute;
+		border-bottom: 1px solid $gold;
+		bottom: 2%;
+		right: 0;
+		width: 425px;
+		opacity: .5;
+	}
+	&__descr {
+		margin-left: 50px;
+		font-size: 16px;
+		font-weight: 300;
+	}
 }
