@@ -6,6 +6,8 @@
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="libs/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl.theme.default.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -140,30 +142,76 @@
 	<section class="reviews">
 		<div class="container">
 			<h2 class="title">Отзывы</h2>
-			<div class="reviews__item">
-				<div class="reviews__photo">
-					<img src="img/photo2.png" alt="photo2">
+			<div class="owl-carousel owl-theme" id="carousel1">
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img src="img/photo2.png" alt="photo2">
+					</div>
+					<p class="reviews__descr"><span class="icon-quotation-marks-in-speech-bubble"></span>Первый раз пришёл на консультацию к Маргарите Леонидовне и остался доволен. Она сразу расположила к себе. Общение было легким и я не стеснялся говорить. Улыбается, добрая.
+						Я к ней ходил длительное время и после каждого сеанса видел улучшения.
+						Тот кто ни разу не ходил к психологу, но нуждается в нем, рекомендую Маргариту Леонидовну!
+						Маргарита Леонидовна специалист в своей области!<br><i>Дмитрий Жундонский</i>
+					</p>
 				</div>
-				<p class="reviews__descr"><span class="icon-quotation-marks-in-speech-bubble"></span>Первый раз пришёл на консультацию к Маргарите Леонидовне и остался доволен. Она сразу расположила к себе. Общение было легким и я не стеснялся говорить. Улыбается, добрая.
-					Я к ней ходил длительное время и после каждого сеанса видел улучшения.
-					Тот кто ни разу не ходил к психологу, но нуждается в нем, рекомендую Маргариту Леонидовну!
-					Маргарита Леонидовна специалист в своей области!<br><i>Дмитрий Жундонский</i></p>
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img src="img/photo3.jpg" alt="photo3">
+					</div>
+					<p class="reviews__descr"><span class="icon-quotation-marks-in-speech-bubble"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi eum. Quam id quae repudiandae voluptatum dicta nam quis quidem perferendis nesciunt quibusdam ratione quas autem, est quod in non perspiciatis labore voluptatibus blanditiis ipsam ab veniam error modi fugit. Saepe aspernatur quaerat quae est minus quas asperiores ut repellendus.</p>
+				</div>
+				<div class="reviews__item">
+					<div class="reviews__photo">
+						<img src="img/photo4.jpg" alt="photo4">
+					</div>
+					<p class="reviews__descr"><span class="icon-quotation-marks-in-speech-bubble"></span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis nisi alias, repudiandae quo nobis. Ab id mollitia illum repudiandae dolorum iste laboriosam autem sunt facere fugit, et debitis possimus totam in! Nostrum illo nisi quam iure. Nostrum, aut consequatur rem aspernatur dignissimos corporis enim?</p>
+				</div>
 			</div>
-			<div class="reviews__item hidden">
-				<div class="reviews__photo">
-					<img src="img/photo3.jpg" alt="photo3">
-				</div>
-				<p class="reviews__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi eum. Quam id quae repudiandae voluptatum dicta nam quis quidem perferendis nesciunt quibusdam ratione quas autem, est quod in non perspiciatis labore voluptatibus blanditiis ipsam ab veniam error modi fugit. Saepe aspernatur quaerat quae est minus quas asperiores ut repellendus.</p>
-			</div>
-			<div class="reviews__item hidden">
-				<div class="reviews__photo">
-					<img src="img/photo4.jpg" alt="photo4">
-				</div>
-				<p class="reviews__descr">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate officiis nisi alias, repudiandae quo nobis. Ab id mollitia illum repudiandae dolorum iste laboriosam autem sunt facere fugit, et debitis possimus totam in! Nostrum illo nisi quam iure. Nostrum, aut consequatur rem aspernatur dignissimos corporis enim?</p>
+			<div class="slider">
+				<div class="slider__customPrevBtn"><img src="img/icons/arrow1.png" alt="left"></div>
+				<div class="slider__customNextBtn"><img src="img/icons/arrow2.png" alt="right"></div>
 			</div>
 		</div>
 	</section>
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<section class="documents">
+		<div class="container">
+			<h2 class="title">Дипломы и сертификаты</h2>
+			<div class="owl-carousel owl-theme" id="carousel2">
+				<div class="documents__item"><img src="img/sec7_p1.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/sec7_p2.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/sec7_p3.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/photo2.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/photo2.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/photo2.png" alt="photo2"></div>
+				<div class="documents__item"><img src="img/photo2.png" alt="photo2"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="prices">
+		<div class="container">
+			<h2 class="title">Цены</h2>
+			<div class="prices__wrap">
+				<div class="prices__item">
+					<div class="prices__descr"><span class="icon-skype"></span><br><br>Работа удаленно через What’s App или Skype<br><br><i>час 1500 р</i></div>
+				</div>
+				<div class="prices__item">
+					<div class="prices__descr"><span class="icon-notes"></span><br><br>Консультация психолога<br><br><i>час 2500 р</i></div>
+				</div>
+				<div class="prices__item">
+					<div class="prices__descr"><span class="icon-brain"></span><br><br>Психодиагностика<br><br><i>услуга 5000 р</i></div>
+				</div>
+				<div class="prices__item">
+					<div class="prices__descr"><span class="icon-group"></span><br><br>Групповые занятия (подробнее)<br><br><i>услуга 4000 р</i></div>
+				</div>
+				<div class="prices__item">
+					<div class="prices__descr"><span class="icon-family_2"></span><br><br>Семейное психологическое консультирование<br><br><i>час 3000 р.</i></div>
+				</div>
+			</div>
+		</div>
+	</section>
+<script src="libs/jquery-3.4.1.min.js"></script>
+<script src="libs/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
