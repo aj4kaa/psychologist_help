@@ -18,6 +18,7 @@ jQuery(document).ready(function () {
 		loop: true,
 		smartSpeed: 1000,
 		autoplay: true,
+		dotsEach: true,
 		responsive: {
 			0: {
 				items: 1,
@@ -36,6 +37,7 @@ jQuery(document).ready(function () {
 		items: 1,
 		loop: true,
 		smartSpeed: 1000,
+		dotsEach: true,
 		autoplay: false,
 		responsive: {
 			0: {
@@ -52,10 +54,28 @@ jQuery(document).ready(function () {
 
 	$('.slider__customNextBtn').click(function () {
 		slider1.trigger('next.owl.carousel');
-	})
+	});
 
 	$('.slider__customPrevBtn').click(function () {
 		slider1.trigger('prev.owl.carousel');
-	})
+	});
+
+	// Form
+
+	// let message = {
+	// 	loading: 'Загрузка',
+	// 	success: 'Спасибо! Скоро мы с вами свяжемся!',
+	// 	failure: 'Что то пошло не так...'
+	// };
+
+	// let form = document.queryCommandValue('.main-form'),
+	// 	input = form.getElementByTagName('inpt'),
+	// 	statusMessage = document.createElement('div');
+
+	// 	statusMessage.classList.add('status');
+
+	// form.addEventListener('submit', function(event) {
+	// 	event.preventDefault();
+	// });
 
 }); //конец ready
