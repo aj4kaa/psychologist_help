@@ -9,6 +9,9 @@
 	background: none;
 	border: 2px solid $gold;
 	color: $text_white;
+	&_form {
+		margin: 0 auto;
+	}
 }
 
 button:hover {

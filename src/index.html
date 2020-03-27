@@ -211,25 +211,76 @@
 	<section class="sendform">
 		<div class="container">
 			<h2 class="title">Хотите узнать подробности или записаться?</h2>
+			<div class="sendform__wrap">
+				<div class="sendform__icon"><span class="icon-maps-and-flags"></span>
+					<div class="sendform__descr">Краснодар, Красная улица, 113</div>
+				</div>
+				<div class="sendform__icon"><span class="icon-email"></span>
+					<div class="sendform__descr">psiholog@mail.com</div>
+				</div>
+				<div class="sendform__icon"><span class="icon-phone-call"></span>
+					<div class="sendform__descr">+7 962 863-14-55</div>
+				</div>
+			</div>
+			<!-- <form class="feed-form" action="# method="post" name="form">
+				<input name="name" type="text" required placeholder="Ваше имя" />
+				<br>
+				<input name="email" type="email " placeholder="Ваша почта" />
+				<br>
+				<input name="phone" type="tel" required minlength="11" placeholder="+7(999)999 99 99" />
+				<br>
+				<textarea name="message" cols="32" rows="5" placeholder="Текст сообщения"></textarea>
+				<br>
+				<label><input name="checkbox" type="checkbox" required>Я согласен на обработку персоональных данных</label>
+				<button class="button button_form">Отправить</button>
+			</form> -->
 
-			<form action="# method="post" name="form">
-				<input name="name" type="text" placeholder="Ваше имя" />
-				<br>
-				<input name="email" type="text" placeholder="Ваша почта" />
-				<br>
-				<input size="30" name="header" type="text" placeholder="Тема" />
-				<br>
-				<textarea cols="32" name="message" rows="5">Текст сообщения</textarea>
-				<br>
-				<input type="submit" value="Отправить" />
-			</form>
-
-			<form action="#" class="main-form">
-				<div class="popup-form-header">Узнайте больше о своём отдыхе</div>
-				<label class="popup-form__label" for="phone">Введите ваш номер телефона:</label>
-				<input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
-				<button class="button popup-form__btn">Оставить заявку!</button>
-			</form>
+			<div class="container-contact100">
+				<div class="wrap-contact100">
+					<form class="contact100-form validate-form">
+						<span class="contact100-form-title">
+							Contact Us
+						</span>
+		
+						<label class="label-input100" for="first-name">Your Name *</label>
+						<div class="wrap-input100 rs1 validate-input">
+							<input required id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+							<span class="focus-input100"></span>
+						</div>
+						<div class="wrap-input100 rs1 validate-input">
+							<input class="input100" type="text" name="last-name" placeholder="Last name">
+							<span class="focus-input100"></span>
+						</div>
+		
+						<label class="label-input100" for="email">Email Address *</label>
+						<div class="wrap-input100 validate-input">
+							<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+							<span class="focus-input100"></span>
+						</div>
+		
+						<label class="label-input100" for="phone">Phone Number</label>
+						<div class="wrap-input100">
+							<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+							<span class="focus-input100"></span>
+						</div>
+		
+						<label class="label-input100" for="message">Message *</label>
+						<div class="wrap-input100 validate-input">
+							<textarea id="message" class="input100" name="message" placeholder="Please enter your comments..."></textarea>
+							<span class="focus-input100"></span>
+						</div>
+		
+						<div class="container-contact100-form-btn">
+							<button class="contact100-form-btn">
+								<span>
+									Submit
+									<i class="zmdi zmdi-arrow-right m-l-8"></i>
+								</span>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
 
 		</div>
 	</section>
