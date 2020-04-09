@@ -38,7 +38,7 @@
 			<div class="promo__wrap">
 				<div class="promo__title">Невгад Маргарита</div>
 				<h1 class="promo__subtitle">Профессиональная психологическая помощь</h1>
-				<button class="button promo__btn">записаться</button>
+				<button data-modal="consultation" class="button promo__btn">записаться</button>
 				<div class="promo__icons">
 					<div class="social">
 						<a href="" class="social__facebook"><span class="icon-vk-social-logotype"></span></a>
@@ -291,6 +291,62 @@
 			<div class="footer__copyright">© Copyright 2020 - All Rights Reserved</div>
 		</div>
 	</footer>
+
+	<div class="overlay">
+		<div class="modal fade" id="consultation">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Просто заполните форму заявки</div>
+			<div class="modal__descr">и мы перезвоним вам в ближайщее время</div>
+
+			<form class="contact100-form validate-form">
+				<label class="label-input100" for="first-name">Как вас зовут *</label>
+				<div class="wrap-input100 rs1 validate-input">
+					<input required id="first-name" class="input100" type="text" name="first-name" placeholder="Ваше имя...">
+					<span class="focus-input100"></span>
+				</div>
+				<label class="label-input100" for="email">Электронная почта *</label>
+				<div class="wrap-input100 validate-input">
+					<input id="email" class="input100" type="text" name="email" placeholder="прим. example@yandex.ru">
+					<span class="focus-input100"></span>
+				</div>
+
+				<label class="label-input100" for="phone">Номер телефона</label>
+				<div class="wrap-input100">
+					<input required id="phone" class="input100" type="text" name="Телефон..." placeholder="+7(999)999 99 99">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="container-contact100-form-btn">
+					<button class="button entry__btn contact100-form-btn">Отправить
+						<span class="icon-down-arrow"></span>
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<!-- <div class="modal" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Ваш заказ:</div>
+			<div class="modal__descr">Пульсометр Polar FT1</div>
+			<form class="feed-form feed-form_mt25" action="#">
+				<input name="name" required placeholder="Ваше имя" type="text">
+				<input name="phone" required placeholder="Ваш телефон">
+				<input name="email" required placeholder="Ваш email" type="email">
+				<button class="button button_submit">купить</button>
+			</form>
+		</div>
+
+		<div class="modal modal_mini" id="thanks">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+		</div> -->
+
+	</div>
+
+	<a href="#up" class="pageup">
+		<img src="icons/arrow_down.svg" alt="up">
+	</a>
+
 <script src="libs/jquery-3.4.1.min.js"></script>
 <script src="libs/owl.carousel.min.js"></script>
 <script src="js/script.js"></script>
