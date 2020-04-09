@@ -60,6 +60,32 @@ jQuery(document).ready(function () {
 		slider1.trigger('prev.owl.carousel');
 	});
 
+
+	// MASK 
+
+	$('input[name=phone]').mask("+7(999)999-99-99");
+
+	// VALIDATE
+
+	function validateForm (form) {
+		$(form).validate({
+			rules: {
+				firstname: "required",
+				phone: "required",
+				checkbox: "required"
+			},
+			messages: {
+				firstname: "Пожалуйста введите ваше имя",
+				phone: "Пожалуйста введите телефон",
+				checkbox: "Отметьте это поле пожалуйста"
+			}
+			
+		});
+	}
+
+	validateForm('#consultation2 form');
+	validateForm('#consultation form');
+
 	//MODAL
 
 	$('[data-modal=consultation]').on('click', function () {
@@ -71,7 +97,7 @@ jQuery(document).ready(function () {
 	$('.button_mini').each(function (i) {
 		$(this).on('click', function () {
 			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-			$('.overlay, #order').fadeIn('slow')
+			$('.overlay, #order').fadeIn('slow');
 		});
 	});
 

@@ -25,6 +25,19 @@ label {
 	}
 }
 
+.error {
+	color: #FF0000;
+	border: 1px solid #FF0000;
+	animation-name: fade;
+	animation-duration: 1s;
+}
+
+label.error {
+	border: none;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
 /*---------------------------------------------*/
 button {
 	outline: none !important;
@@ -228,33 +241,33 @@ textarea.input100 {
 	box-shadow: 0 5px 20px 0px rgba(250, 66, 81, 0.1);
 }
 
-.alert-validate::before {
-	content: "";
-	display: flex;
-	align-items: center;
-	position: absolute;
-	width: calc(100% + 2px);
-	height: calc(100% + 2px);
-	background-color: transparent;
-	border: 1px solid #fa4251;
-	border-radius: 2px;
-	top: -1px;
-	left: -1px;
-	pointer-events: none;
-}
+// .alert-validate::before {
+// 	content: "";
+// 	display: flex;
+// 	align-items: center;
+// 	position: absolute;
+// 	width: calc(100% + 2px);
+// 	height: calc(100% + 2px);
+// 	background-color: transparent;
+// 	border: 1px solid #fa4251;
+// 	border-radius: 2px;
+// 	top: -1px;
+// 	left: -1px;
+// 	pointer-events: none;
+// }
 
-.btn-hide-validate {
-	font-size: 18px;
-	color: #fa4251;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	height: 100%;
-	top: 0px;
-	right: -28px;
-}
+// .btn-hide-validate {
+// 	font-size: 18px;
+// 	color: #fa4251;
+// 	cursor: pointer;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// 	position: absolute;
+// 	height: 100%;
+// 	top: 0px;
+// 	right: -28px;
+// }
 
 .rs1-alert-validate.alert-validate::before {
 	background-color: #fff;

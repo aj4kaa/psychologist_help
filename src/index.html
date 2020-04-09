@@ -135,7 +135,7 @@
 	<section class="entry">
 		<div class="container">
 			<h2 class="title">Записаться на прием или задать вопрос</h2>
-			<button class="button entry__btn">записаться</button>
+			<button data-modal="consultation" class="button entry__btn">записаться</button>
 		</div>
 	</section>
 
@@ -222,7 +222,7 @@
 					<div class="sendform__descr">+7 962 863-14-55</div>
 				</div>
 			</div>
-			<div class="container-contact100">
+			<div class="container-contact100" id="consultation2">
 				<div class="wrap-contact100">
 					<form class="contact100-form validate-form">
 						<div class="contact100-form-title">
@@ -231,7 +231,7 @@
 		
 						<label class="label-input100" for="first-name">Как вас зовут *</label>
 						<div class="wrap-input100 rs1 validate-input">
-							<input required id="first-name" class="input100" type="text" name="first-name" placeholder="Ваше имя...">
+							<input id="first-name" class="input100" type="text" name="firstname" placeholder="Ваше имя...">
 							<span class="focus-input100"></span>
 						</div>
 						<div class="wrap-input100 rs1 validate-input">
@@ -247,7 +247,7 @@
 		
 						<label class="label-input100" for="phone">Номер телефона</label>
 						<div class="wrap-input100">
-							<input required id="phone" class="input100" type="text" name="Телефон..." placeholder="+7(999)999 99 99">
+							<input id="phone" class="input100" type="text" name="phone" placeholder="+7 (900) 000-00-00">
 							<span class="focus-input100"></span>
 						</div>
 		
@@ -256,7 +256,7 @@
 							<textarea id="message" class="input100" name="message" placeholder="Текст сообщения..."></textarea>
 							<span class="focus-input100"></span>
 						</div>
-						<label><input name="checkbox" type="checkbox" required>Я согласен на обработку персоональных данных</label>
+						<label><input name="checkbox" type="checkbox">Я согласен на обработку персоональных данных</label>
 						<div class="container-contact100-form-btn">
 							<button class="button entry__btn contact100-form-btn">Отправить
 								<span class="icon-down-arrow"></span>
@@ -301,18 +301,18 @@
 			<form class="contact100-form validate-form">
 				<label class="label-input100" for="first-name">Как вас зовут *</label>
 				<div class="wrap-input100 rs1 validate-input">
-					<input required id="first-name" class="input100" type="text" name="first-name" placeholder="Ваше имя...">
+					<input id="first-name2" class="input100" type="text" name="firstname" placeholder="Ваше имя...">
 					<span class="focus-input100"></span>
 				</div>
 				<label class="label-input100" for="email">Электронная почта *</label>
 				<div class="wrap-input100 validate-input">
-					<input id="email" class="input100" type="text" name="email" placeholder="прим. example@yandex.ru">
+					<input id="email2" class="input100" type="text" name="email" placeholder="прим. example@yandex.ru">
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="phone">Номер телефона</label>
 				<div class="wrap-input100">
-					<input required id="phone" class="input100" type="text" name="Телефон..." placeholder="+7(999)999 99 99">
+					<input id="phone2" class="input100" name="phone" placeholder="+7 (900) 000-00-00">
 					<span class="focus-input100"></span>
 				</div>
 				<div class="container-contact100-form-btn">
@@ -321,26 +321,12 @@
 					</button>
 				</div>
 			</form>
+			<div class="modal modal_mini" id="thanks">
+				<div class="modal__close">&times;</div>
+				<div class="modal__subtitle">Спасибо за вашу заявку!</div>
+				<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+			</div>
 		</div>
-
-		<!-- <div class="modal" id="order">
-			<div class="modal__close">&times;</div>
-			<div class="modal__subtitle">Ваш заказ:</div>
-			<div class="modal__descr">Пульсометр Polar FT1</div>
-			<form class="feed-form feed-form_mt25" action="#">
-				<input name="name" required placeholder="Ваше имя" type="text">
-				<input name="phone" required placeholder="Ваш телефон">
-				<input name="email" required placeholder="Ваш email" type="email">
-				<button class="button button_submit">купить</button>
-			</form>
-		</div>
-
-		<div class="modal modal_mini" id="thanks">
-			<div class="modal__close">&times;</div>
-			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
-			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-		</div> -->
-
 	</div>
 
 	<a href="#up" class="pageup">
@@ -349,6 +335,8 @@
 
 <script src="libs/jquery-3.4.1.min.js"></script>
 <script src="libs/owl.carousel.min.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script src="libs/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
