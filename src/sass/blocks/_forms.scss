@@ -40,7 +40,13 @@ input:focus {
 
 label {
 	display: block;
-	margin: 0;
+	margin: 0 auto;
+	input {
+		margin-right: 10px;
+		transform:scale(1.3);
+		opacity:0.9;
+		cursor:pointer;
+	}
 }
 
 /*---------------------------------------------*/
@@ -59,6 +65,7 @@ iframe {
 }
 
 .container-contact100 {
+	margin-top: 46px;
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
@@ -68,13 +75,10 @@ iframe {
 	padding: 15px;
 	border: 1px solid $gold;
 	background: $bg;
-	// background: linear-gradient(45deg, #c77ff2, #e8519e);
-
 }
 
 .wrap-contact100 {
 	width: 790px;
-	background: $text_white;
 	border-radius: 2px;
 	padding: 55px 95px 68px 95px;
 }
@@ -94,7 +98,8 @@ iframe {
 	width: 100%;
 	display: block;
 	font-size: 30px;
-	color: #333333;
+	font-weight: 300;
+	color: $text_white;
 	line-height: 1.2;
 	text-align: center;
 	padding-bottom: 45px;
@@ -138,6 +143,7 @@ iframe {
 }
 
 input.input100 {
+	background-color: $text_white;
 	height: 55px;
 }
 
@@ -145,6 +151,7 @@ textarea.input100 {
 	min-height: 162px;
 	padding-top: 19px;
 	padding-bottom: 15px;
+	background-color: $text_white;
 }
 
 /*---------------------------------------------*/
@@ -158,8 +165,8 @@ textarea.input100 {
 	left: -1px;
 	pointer-events: none;
 	border: 1px solid;
-	border-color: #d867c6;
-	border-color: linear-gradient(45deg, #c77ff2, #e8519e);
+	border-color: $gold;
+	border-color: linear-gradient(45deg, #d4b263, $gold);
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.4s;
@@ -183,8 +190,9 @@ textarea.input100 {
 }
 
 .contact100-form-btn {
-	font-size: 16px;
-	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: $bg;
 	line-height: 1.2;
 	display: flex;
 	justify-content: center;
@@ -193,38 +201,23 @@ textarea.input100 {
 	min-width: 150px;
 	height: 55px;
 	border-radius: 27px;
-	background: #d867c6;
-	background: linear-gradient(45deg, #c77ff2, #e8519e);
+	background: $gold;
 	position: relative;
 	z-index: 1;
 	transition: all 0.4s;
+	span {
+		transform: rotate(-90deg);
+		margin-left: 20px;
+		color: $bg;
+	}
+	&:hover {
+		background: linear-gradient(45deg, $gold, #d4b263);
+	}
 }
 
-.contact100-form-btn::before {
-	content: "";
-	display: block;
-	position: absolute;
-	z-index: -1;
-	border-radius: 27px;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: #333333;
-	opacity: 1;
-	transition: all 0.4s;
-}
-
-.contact100-form-btn:hover:before {
-	opacity: 0;
-}
-
-.contact100-form-btn i {
-	transition: all 0.4s;
-}
-
-.contact100-form-btn:hover i {
-	transform: translateX(10px);
+.contact100-form-btn:hover span {
+	transform: translateX(15px) rotate(-90deg);
+	color: $text_white;
 }
 
 

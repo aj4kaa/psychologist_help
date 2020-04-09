@@ -5,8 +5,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&>.nav-menu {
+			margin-left: 100px;
+		}
 	}
 	&__copyright {
+		margin-top: 20px;
 		text-align: center;
 	}
 }
