@@ -1,5 +1,7 @@
 @media (max-width: 1200px) {
-	
+	.hamburger {
+		display: none;
+	}
 }
 
 @media (max-width: 991px) {
@@ -7,7 +9,79 @@
 }
 
 @media (max-width: 767px) {
-	
+	.button.promo__btn {
+		margin-left: 0;
+	}
+	.header {
+		height: auto;
+	}
+	.header__wrap {
+		padding: 50px 0 50px 0;
+		flex-direction: column;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width:70%;
+		height: 100vh;
+		background-color: rgba(0,0,0,.7);
+		transition: 1s all;
+		nav {
+			height: auto;
+			ul {
+			flex-direction: column;
+			flex-wrap: unset;
+			}
+			li {
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+		.header__links {
+			height: 100vh;
+			min-width: auto;
+			flex-direction: column;
+			justify-content: center;
+			li {
+				margin-top: 25px;
+			}
+		}
+	}
+	.hamburger {
+		height: 25px;
+		display: block;
+		position: fixed;
+		right: 10px;
+		top: 10px;
+		width: 26px;
+		span {
+			transition: 1s all;
+			border-radius: 10px;
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: #fff;
+			margin-bottom: 2px;
+		}
+	}
+	.hamactive {
+		left: 0;
+	}
+	.hamanimate {
+		span {
+			margin-bottom: -2px;
+			&:nth-child(1) {
+				transform: rotate(-45deg);
+			}
+			&:nth-child(2) {
+				opacity: 0;
+				transform: rotate(145deg);
+			}
+			&:nth-child(3) {
+				transform: rotate(45deg);
+			}
+		}
+
+	}
 }
 
 @media (max-width: 575px) {

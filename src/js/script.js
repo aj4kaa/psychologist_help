@@ -60,6 +60,12 @@ jQuery(document).ready(function () {
 		slider1.trigger('prev.owl.carousel');
 	});
 
+	// HAMBURGER MENU
+
+	$('.hamburger').on('click', function() {
+		$(this).toggleClass('hamanimate');
+		$('.header__wrap').toggleClass('hamactive');
+	});
 
 	// MASK 
 
