@@ -100,6 +100,11 @@ jQuery(document).ready(function () {
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+	$('.overlay').on('click', function (e) {
+		if ($(e.target).hasClass('overlay')) {
+			$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+		}
+	});
 
 	// SEND FORM
 
