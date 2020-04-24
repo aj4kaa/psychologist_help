@@ -2,11 +2,26 @@ jQuery(document).ready(function () {
 
 	// Код для параллакса фона
 	$objWindow = $(window);
+
+	var width = $(window).width();
+	var backPos = '';
+	console.log(typeof width);
+	
+	
+	if (width >= '767') {
+		backPos = '50% ';
+		console.log('if', width);
+		
+	} else {
+		backPos = '70% ';
+		console.log('else', width);
+	}
+
 	$('section[data-type="background"]').each(function () {
 		var $bgObj = $(this);
 		$(window).scroll(function () {
 			var yPos = -($objWindow.scrollTop() / $bgObj.data('speed'));
-			var coords = '50% ' + yPos + 'px';
+			var coords = backPos + yPos + 'px';
 			$bgObj.css({
 				backgroundPosition: coords
 			});
@@ -24,7 +39,7 @@ jQuery(document).ready(function () {
 				items: 1,
 			},
 			600: {
-				items: 1,
+				items: 2,
 			},
 			1000: {
 				items: 3
