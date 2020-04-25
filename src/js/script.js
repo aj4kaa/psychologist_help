@@ -53,7 +53,7 @@ jQuery(document).ready(function () {
 		loop: true,
 		smartSpeed: 1000,
 		dotsEach: true,
-		autoplay: false,
+		autoplay: true,
 		responsive: {
 			0: {
 				items: 1
