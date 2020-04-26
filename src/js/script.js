@@ -5,16 +5,13 @@ jQuery(document).ready(function () {
 
 	var width = $(window).width();
 	var backPos = '';
-	console.log(typeof width);
 	
 	
 	if (width >= '767') {
 		backPos = '50% ';
-		console.log('if', width);
 		
 	} else {
 		backPos = '70% ';
-		console.log('else', width);
 	}
 
 	$('section[data-type="background"]').each(function () {
@@ -53,7 +50,7 @@ jQuery(document).ready(function () {
 		loop: true,
 		smartSpeed: 1000,
 		dotsEach: true,
-		autoplay: true,
+		autoplay: false,
 		responsive: {
 			0: {
 				items: 1
@@ -156,6 +153,25 @@ jQuery(document).ready(function () {
 		const _href = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(_href).offset().top+"px"});
 		return false;
+	});
+
+	// QUESTIONS
+
+	$('.questions__naccs .questions__menu div').on("click", function() {
+		const numberIndex = $(this).index();
+	
+		if (!$(this).is("questions__active")) {
+			$(".questions__naccs .questions__menu div").removeClass("questions__active");
+			$(".questions__naccs ul li").removeClass("questions__active");
+	
+			$(this).addClass("questions__active");
+			$(".questions__naccs ul").find("li:eq(" + numberIndex + ")").addClass("questions__active");
+	
+			const listItemHeight = $(".questions__naccs ul")
+				.find("li:eq(" + numberIndex + ")")
+				.innerHeight();
+			$(".questions__naccs ul").height(listItemHeight + "px");
+		}
 	});
 
 	// Form

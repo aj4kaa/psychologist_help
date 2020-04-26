@@ -8,6 +8,9 @@
 		top: -240px;
 		left: 0;
 		z-index: 1;
+		&:hover {
+			background-color: rgba(#d5a129, 0.5)
+		}
 	}
 	&__customNextBtn {
 		position: absolute;
@@ -17,6 +20,10 @@
 		top: -240px;
 		right: 0;
 		z-index: 1;
+		&:hover {
+			background-color: rgba(#d5a129, 0.5)
+		}
 	}
+	
 }
 
