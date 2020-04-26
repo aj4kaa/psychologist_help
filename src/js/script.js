@@ -157,7 +157,7 @@ jQuery(document).ready(function () {
 
 	// QUESTIONS
 
-	$('.questions__naccs .questions__menu div').on("click", function() {
+	$('.questions__naccs .questions__menu div').on("click", function () {
 		const numberIndex = $(this).index();
 	
 		if (!$(this).is("questions__active")) {
@@ -171,6 +171,10 @@ jQuery(document).ready(function () {
 				.find("li:eq(" + numberIndex + ")")
 				.innerHeight();
 			$(".questions__naccs ul").height(listItemHeight + "px");
+
+			if (width <= '991') {
+				$('.questions ul.questions__nacc li p').css('opacity','1');
+			}
 		}
 	});
 

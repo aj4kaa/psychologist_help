@@ -8,6 +8,7 @@
 	.promo {
 		text-align: center;
 		padding: 20px;
+		background-position: 70%;
 		&__wrap {
 			align-items: center;
 		}
@@ -232,12 +233,13 @@
 			width: 100%;
 		}
 	}
+	.questions ul.questions__nacc li p {
+		opacity: 0;
+	}
 	.questions ul.questions__nacc li {
 		transform: translateX(0);
-	}
-	.questions ul.questions__nacc li div p {
+		min-height: 80px;
 		margin-top: 20px;
-		min-height: 100px;
 	}
 
 	.entry {
